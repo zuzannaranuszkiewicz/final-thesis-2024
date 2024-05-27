@@ -1,1012 +1,1527 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Room booking system for educational institutions - Studiz</title>
-    <link rel="stylesheet" href="styles2.css"> 
-    <style>
-    </style>
-</head>
-<body>
-        <div id="nav-bar">
-            <img src="images/studiz-black.png" id="logo" alt="Studiz logo, a link to the main page"/>
-            <span id="nav-items">
-                <span id="nav-discounts">
-                    <p class="details-bold">Discounts</p>
-                    <img src="images/icons/arrow-down.png" class="icon-s" alt="dropdown icon" />
-                </span>
-                <p class="details-bold">Events</p>
-                <p class="details-bold">How it works</p>
-                <img src="images/danish.png" class="flag" alt="Danish flag, an option to change language"/>
-                <span id="nav-profile">
-                    <p class="details">Hi Jesper!</p>
-                    <img src="images/profiles/jesper.png" id="profile-s" alt="profile image of the user"/>
-                </span>
+    <link rel="stylesheet" href="styles2.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div id="nav-bar">
+      <img
+        src="images/studiz-black.png"
+        id="logo"
+        alt="Studiz logo, a link to the main page"
+      />
+      <span id="nav-items">
+        <span id="nav-discounts">
+          <p class="details-bold">Discounts</p>
+          <img
+            src="images/icons/arrow-down.png"
+            class="icon-s"
+            alt="dropdown icon"
+          />
+        </span>
+        <p class="details-bold">Events</p>
+        <p class="details-bold">How it works</p>
+        <img
+          src="images/danish.png"
+          class="flag"
+          alt="Danish flag, an option to change language"
+        />
+        <span id="nav-profile">
+          <p class="details">Hi Jesper!</p>
+          <img
+            src="images/profiles/jesper.png"
+            id="profile-s"
+            alt="profile image of the user"
+          />
+        </span>
+      </span>
+    </div>
+    <!-- content bar -->
+    <div id="content-container">
+      <div id="content">
+        <!-- user info -->
+        <span id="user-info">
+          <span id="user-info-container">
+            <span id="user-info-name">
+              <p class="heading-3">Jesper Nielsen</p>
+              <p class="labels grey">Web development lecturer</p>
             </span>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <span id="user-info">
-                    <span id="user-info-container">
-                        <span id="user-info-name">
-                            <p class="heading-3">Jesper Nielsen</p>
-                            <p class="labels grey">Web development lecturer</p>
-                        </span>
-                        <a href="error.html"><button id="get-id">Get Employee ID</button></a>
-                        <img src="images/profiles/jesper.png" id="profile-l" alt="profile image of the user" />
-                    </span>
-                    <span id="user-tabs">
-                        <span class="tab"><p class="details">Tickets</p></span>
-                        <span class="tab"><p class="details">Events</p></span>
-                        <span class="tab"><p class="details">Study Trips</p></span>
-                        <span class="tab active"><p class="details-bold">Room bookings</p></span>
-                        <span class="tab"><p class="details">User information</p></span>
-                    </span>
+            <a href="error.html"
+              ><button id="get-id">Get Employee ID</button></a
+            >
+            <img
+              src="images/profiles/jesper.png"
+              id="profile-l"
+              alt="profile image of the user"
+            />
+          </span>
+          <!-- features tabs -->
+          <span id="user-tabs">
+            <span class="tab"><p class="details">Tickets</p></span>
+            <span class="tab"><p class="details">Events</p></span>
+            <span class="tab"><p class="details">Study Trips</p></span>
+            <span class="tab active"
+              ><p class="details-bold">Room bookings</p></span
+            >
+            <span class="tab"><p class="details">User information</p></span>
+          </span>
+        </span>
+        <!-- bookings -->
+        <span id="bookings">
+          <p class="text-bold">Room bookings</p>
+          <!-- first card-->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Quick Booking of Room 2.30</p>
+                  <span class="status">
+                    <span class="dot-ongoing"></span>
+                    <p class="labels ongoing">Ongoing</p>
+                  </span>
                 </span>
-                <span id="bookings">
-                    <p class="text-bold">Room bookings</p>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Quick Booking of Room 2.30</p>
-                                    <span class="status">
-                                        <span class="dot-ongoing"></span>
-                                        <p class="labels ongoing">Ongoing</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>03/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>10:30-11:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Room 2.30</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">03/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">10:30-11:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Jesper Nielsen</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Room 2.30</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">3 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-2.30.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Team strategy session</p>
-                                    <span class="status">
-                                        <span class="dot-soon"></span>
-                                        <p class="labels soon">Starting soon</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>03/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>11:00-12:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Room 2.31</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">03/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">11:00-12:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/rotate.png" class="icon-s" alt="recurrence icon" />
-                                                        <p>Recurrence:</p>
-                                                    </span>
-                                                    <p class="labels">Monthly</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Anne Pedersen</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="participants icon" />
-                                                        <p>Participants:</p>
-                                                    </span>
-                                                    <p class="labels">4</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Room 2.31</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">6 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard, external screen</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Details</p>
-                                            <p class="labels">A collaborative meeting for our software development team to strategize upcoming projects and initiatives.</p>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-2.31.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                                <span class="card-open-participants">
-                                    <p class="details-bold">Participants</p>
-                                    <span class="participants-grid">
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/anne.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Anne Pedersen</p>
-                                                    <p class="labels grey">anpe@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/jesper.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Jesper Nielsen</p>
-                                                    <p class="labels grey">jeni@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/malene.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Malene Andersen</p>
-                                                    <p class="labels grey">maan@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status no-response">
-                                                <img src="images/icons/faq-circle.png" class="icon-s" alt="no response icon" />
-                                                <p class="labels">No response</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/morten.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Morten Jense</p>
-                                                    <p class="labels grey">moje@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status busy">
-                                                <img src="images/icons/close-circle.png" class="icon-s" alt="busy icon" />
-                                                <p class="labels">Busy</p>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Software Development - class 2B</p>
-                                    <span class="status">
-                                        <span class="dot-approved"></span>
-                                        <p class="labels approved">Approved</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>13/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>8:30-14:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Classroom 01</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">13/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">8:30-14:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/rotate.png" class="icon-s" alt="recurrence icon" />
-                                                        <p>Recurrence:</p>
-                                                    </span>
-                                                    <p class="labels">Weekly</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Jesper Nielsen</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Classroom 01</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">40 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard, external screen, sound system</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Details</p>
-                                            <p class="labels">Classes with 2B on software development.</p>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-01.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Software Development - class 1B</p>
-                                    <span class="status">
-                                        <span class="dot-approved"></span>
-                                        <p class="labels approved">Approved</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>14/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>8:30-14:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Classroom 01</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">14/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">8:30-14:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/rotate.png" class="icon-s" alt="recurrence icon" />
-                                                        <p>Recurrence:</p>
-                                                    </span>
-                                                    <p class="labels">Wekkly</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Jesper Nielsen</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Classroom 01</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">40 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard, external screen, sound system</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Details</p>
-                                            <p class="labels">Classes with 1B on software development.</p>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-01.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Feedback session</p>
-                                    <span class="status">
-                                        <span class="dot-approved"></span>
-                                        <p class="labels approved">Approved</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>20/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>8:30-9:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Room 2.17</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">20/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">8:30-9:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Anne Pedersen</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="participants icon" />
-                                                        <p>Participants:</p>
-                                                    </span>
-                                                    <p class="labels">2</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Room 2.17</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">4 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard, external screen</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Details</p>
-                                            <p class="labels">A feedback session on last week's presentation.</p>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-2.17.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                                <span class="card-open-participants">
-                                    <p class="details-bold">Participants</p>
-                                    <span class="participants-grid">
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/anne.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Anne Pedersen</p>
-                                                    <p class="labels grey">anpe@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/jesper.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Jesper Nielsen</p>
-                                                    <p class="labels grey">jeni@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="card">
-                        <span class="card-closed accordion">
-                            <span class="card-closed-details">
-                                <span class="card-closed-details-header">
-                                    <p class="details-bold">Annual debrief</p>
-                                    <span class="status">
-                                        <span class="dot-approved"></span>
-                                        <p class="labels approved">Approved</p>
-                                    </span>
-                                </span>
-                                <span class="card-tags labels grey">
-                                    <span class="card-tag">
-                                        <img src="images/icons/calendar-tag.png" class="icon-s" alt="date icon" />
-                                        <p>24/06-2024</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/time-tag.png" class="icon-s" alt="time icon" />
-                                        <p>12:30-14:00</p>
-                                    </span>
-                                    <span class="card-tag">
-                                        <img src="images/icons/room-tag.png" class="icon-s" alt="room icon" />
-                                        <p>Classroom 01</p>
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="icon-button">
-                                <img src="images/icons/arrow-down.png" class="icon-m" alt="button that opens the dropdown with all details" />
-                            </span>
-                        </span>
-                        <span class="panel">
-                            <hr>
-                            <span class="card-open">
-                                <span class="card-open-container">
-                                    <span class="card-open-info">
-                                        <span class="open-sections">
-                                            <p class="details-bold">Essential information</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/calendar.png" class="icon-s" alt="date icon" />
-                                                        <p>Date:</p>
-                                                    </span>
-                                                    <p class="labels">24/06-2024</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/time.png" class="icon-s" alt="time icon" />
-                                                        <p>Time:</p>
-                                                    </span>
-                                                    <p class="labels">12:30-14:00</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/rotate.png" class="icon-s" alt="recurrence icon" />
-                                                        <p>Recurrence:</p>
-                                                    </span>
-                                                    <p class="labels">Yearly</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/profile.png" class="icon-s" alt="booker icon" />
-                                                        <p>Booker:</p>
-                                                    </span>
-                                                    <p class="labels">Anne Pedersen</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="participants icon" />
-                                                        <p>Participants:</p>
-                                                    </span>
-                                                    <p class="labels">6</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Location</p>
-                                            <span class="section-content">
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/room.png" class="icon-s" alt="room icon" />
-                                                        <p>Room:</p>
-                                                    </span>
-                                                    <p class="labels">Classroom 01</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/group.png" class="icon-s" alt="capacity icon" />
-                                                        <p>Capacity:</p>
-                                                    </span>
-                                                    <p class="labels">40 people</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/setting.png" class="icon-s" alt="equipment icon" />
-                                                        <p>Equipment:</p>
-                                                    </span>
-                                                    <p class="labels">Whiteboard, external screen, sound system</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/building.png" class="icon-s" alt="building icon" />
-                                                        <p>Building:</p>
-                                                    </span>
-                                                    <p class="labels">Main Campus</p>
-                                                </span>
-                                                <span class="section-details">
-                                                    <span class="labels-medium section-details-title">
-                                                        <img src="images/icons/floor.png" class="icon-s" alt="floor icon" />
-                                                        <p>Floor:</p>
-                                                    </span>
-                                                    <p class="labels">2nd floor</p>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="open-sections">
-                                            <p class="details-bold">Details</p>
-                                            <p class="labels">An annual meeting, where we discuss and evaluate on the past work experiences. Mandatory attendance.</p>
-                                        </span>
-                                    </span>
-                                    <span class="card-open-map">
-                                        <p class="details-bold">Map</p>
-                                        <img src="images/map/map-01.png" alt="a map view of the room" class="map" />
-                                    </span>
-                                </span>
-                                <span class="card-open-participants">
-                                    <p class="details-bold">Participants</p>
-                                    <span class="participants-grid">
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/anne.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Anne Pedersen</p>
-                                                    <p class="labels grey">anpe@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/jesper.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Jesper Nielsen</p>
-                                                    <p class="labels grey">jeni@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/malene.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Malene Andersen</p>
-                                                    <p class="labels grey">maan@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/thomas.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Thomas Olsen</p>
-                                                    <p class="labels grey">thol@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/michael.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Michael Sørensen</p>
-                                                    <p class="labels grey">misø@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                        <span class="participant">
-                                            <span class="participant-details">
-                                                <img src="images/profiles/martin.png" class="profile-m" alt="profile image of a participant" />
-                                                <span class="participant-info">
-                                                    <p class="details-medium">Martin Thomsen</p>
-                                                    <p class="labels grey">math@studiz.dk</p>
-                                                </span>
-                                            </span>
-                                            <span class="participant-status attending">
-                                                <img src="images/icons/tick-circle.png" class="icon-s" alt="attending icon" />
-                                                <p class="labels">Attending</p>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>03/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>10:30-11:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Room 2.30</p>
+                  </span>
                 </span>
-            </div>
-        </div>
-        <div id="footer">
-            <span id="footer-links">
-                <span class="footer-links-list">
-                    <p class="details-bold">STUDIZ</p>
-                    <p class="details">Student discount Aalborg</p>
-                    <p class="details">Digital Student-ID</p>
-                    <p class="details">Studiz app</p>
-                </span>
-                <span class="footer-links-list">
-                    <p class="details-bold">DISCOVER</p>
-                    <p class="details">Blog</p>
-                    <p class="details">Studiz start guide</p>
-                    <p class="details">Tickets by Studiz</p>
-                    <p class="details">Unemployment insurance fund</p>
-                    <p class="details">Student drive</p>
-                </span>
-                <span class="footer-links-list">
-                    <p class="details-bold">SUPPORT</p>
-                    <p class="details">FAQ</p>
-                    <p class="details">Help center</p>
-                </span>
-                <span class="footer-links-list">
-                    <p class="details-bold">COMPANY</p>
-                    <p class="details">Do you have an offer for the students?</p>
-                    <p class="details">About us</p>
-                    <p class="details">Team</p>
-                    <p class="details">Join us</p>
-                </span>
-                <span class="footer-links-list">
-                    <p class="details-bold">INSTITUTION</p>
-                    <p class="details">Studiz for educational institutions</p>
-                    <p class="details">Studiz for student unions</p>
-                    <p class="details">Thesis, internship and termproject</p>
-                    <p class="details">Join us</p>
-                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
             </span>
-            <span id="app-header">
-                <hr>
-                <p class="heading-3" style="color: var(--text-white); width: 10rem;">Studiz app</p>
-                <hr>
-            </span>
-            <span id="app-buttons">
-                <img src="images/app-store.png" class="app-button" alt="a button to download the map through App Store" />
-                <img src="images/google-play.png" class="app-button" alt="a button to download the map through Google Play" />
-            </span>
-            <span id="contact-container">
-                <span id="contact-info">
-                    <span id="info-details" class="labels" style="color: var(--grey);">
-                        <p>@2023 Studiz Ldt.</p>
-                        <p>Customer Care: (+45) 71 99 75 20</p>
-                        <p>E-mail: info@studiz.dk</p>
-                        <p>Terms and conditions</p>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">03/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">10:30-11:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Jesper Nielsen</p>
+                        </span>
+                      </span>
                     </span>
-                    <span id="some-icons">
-                        <img src="images/some/facebook.png" class="some-icon" alt="Link to Facebook" />
-                        <img src="images/some/instagram.png" class="some-icon" alt="Link to Instagram" />
-                        <img src="images/some/tiktok.png" class="some-icon" alt="Link to Tiktok" />
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Room 2.30</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">3 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">Whiteboard</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
                     </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-2.30.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
                 </span>
+              </span>
             </span>
-        </div>
+          </span>
+          <!-- second card -->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Team strategy session</p>
+                  <span class="status">
+                    <span class="dot-soon"></span>
+                    <p class="labels soon">Starting soon</p>
+                  </span>
+                </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>03/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>11:00-12:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Room 2.31</p>
+                  </span>
+                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
+            </span>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">03/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">11:00-12:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/rotate.png"
+                              class="icon-s"
+                              alt="recurrence icon"
+                            />
+                            <p>Recurrence:</p>
+                          </span>
+                          <p class="labels">Monthly</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Anne Pedersen</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="participants icon"
+                            />
+                            <p>Participants:</p>
+                          </span>
+                          <p class="labels">4</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Room 2.31</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">6 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">Whiteboard, external screen</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Details</p>
+                      <p class="labels">
+                        A collaborative meeting for our software development
+                        team to strategize upcoming projects and initiatives.
+                      </p>
+                    </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-2.31.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
+                </span>
+                <span class="card-open-participants">
+                  <p class="details-bold">Participants</p>
+                  <span class="participants-grid">
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/anne.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Anne Pedersen</p>
+                          <p class="labels grey">anpe@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/jesper.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Jesper Nielsen</p>
+                          <p class="labels grey">jeni@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/malene.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Malene Andersen</p>
+                          <p class="labels grey">maan@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status no-response">
+                        <img
+                          src="images/icons/faq-circle.png"
+                          class="icon-s"
+                          alt="no response icon"
+                        />
+                        <p class="labels">No response</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/morten.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Morten Jense</p>
+                          <p class="labels grey">moje@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status busy">
+                        <img
+                          src="images/icons/close-circle.png"
+                          class="icon-s"
+                          alt="busy icon"
+                        />
+                        <p class="labels">Busy</p>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <!-- third card -->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Software Development - class 2B</p>
+                  <span class="status">
+                    <span class="dot-approved"></span>
+                    <p class="labels approved">Approved</p>
+                  </span>
+                </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>13/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>8:30-14:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Classroom 01</p>
+                  </span>
+                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
+            </span>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">13/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">8:30-14:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/rotate.png"
+                              class="icon-s"
+                              alt="recurrence icon"
+                            />
+                            <p>Recurrence:</p>
+                          </span>
+                          <p class="labels">Weekly</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Jesper Nielsen</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Classroom 01</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">40 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">
+                            Whiteboard, external screen, sound system
+                          </p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Details</p>
+                      <p class="labels">
+                        Classes with 2B on software development.
+                      </p>
+                    </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-01.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <!-- fourth card -->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Software Development - class 1B</p>
+                  <span class="status">
+                    <span class="dot-approved"></span>
+                    <p class="labels approved">Approved</p>
+                  </span>
+                </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>14/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>8:30-14:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Classroom 01</p>
+                  </span>
+                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
+            </span>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">14/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">8:30-14:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/rotate.png"
+                              class="icon-s"
+                              alt="recurrence icon"
+                            />
+                            <p>Recurrence:</p>
+                          </span>
+                          <p class="labels">Wekkly</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Jesper Nielsen</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Classroom 01</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">40 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">
+                            Whiteboard, external screen, sound system
+                          </p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Details</p>
+                      <p class="labels">
+                        Classes with 1B on software development.
+                      </p>
+                    </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-01.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <!-- fifth card -->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Feedback session</p>
+                  <span class="status">
+                    <span class="dot-approved"></span>
+                    <p class="labels approved">Approved</p>
+                  </span>
+                </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>20/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>8:30-9:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Room 2.17</p>
+                  </span>
+                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
+            </span>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">20/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">8:30-9:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Anne Pedersen</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="participants icon"
+                            />
+                            <p>Participants:</p>
+                          </span>
+                          <p class="labels">2</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Room 2.17</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">4 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">Whiteboard, external screen</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Details</p>
+                      <p class="labels">
+                        A feedback session on last week's presentation.
+                      </p>
+                    </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-2.17.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
+                </span>
+                <span class="card-open-participants">
+                  <p class="details-bold">Participants</p>
+                  <span class="participants-grid">
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/anne.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Anne Pedersen</p>
+                          <p class="labels grey">anpe@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/jesper.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Jesper Nielsen</p>
+                          <p class="labels grey">jeni@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <!-- sixth card -->
+          <span class="card">
+            <span class="card-closed accordion">
+              <span class="card-closed-details">
+                <span class="card-closed-details-header">
+                  <p class="details-bold">Annual debrief</p>
+                  <span class="status">
+                    <span class="dot-approved"></span>
+                    <p class="labels approved">Approved</p>
+                  </span>
+                </span>
+                <span class="card-tags labels grey">
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/calendar-tag.png"
+                      class="icon-s"
+                      alt="date icon"
+                    />
+                    <p>24/06-2024</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/time-tag.png"
+                      class="icon-s"
+                      alt="time icon"
+                    />
+                    <p>12:30-14:00</p>
+                  </span>
+                  <span class="card-tag">
+                    <img
+                      src="images/icons/room-tag.png"
+                      class="icon-s"
+                      alt="room icon"
+                    />
+                    <p>Classroom 01</p>
+                  </span>
+                </span>
+              </span>
+              <span class="icon-button">
+                <img
+                  src="images/icons/arrow-down.png"
+                  class="icon-m"
+                  alt="button that opens the dropdown with all details"
+                />
+              </span>
+            </span>
+            <span class="panel">
+              <hr />
+              <!-- content of the opened card -->
+              <span class="card-open">
+                <span class="card-open-container">
+                  <span class="card-open-info">
+                    <span class="open-sections">
+                      <p class="details-bold">Essential information</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/calendar.png"
+                              class="icon-s"
+                              alt="date icon"
+                            />
+                            <p>Date:</p>
+                          </span>
+                          <p class="labels">24/06-2024</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/time.png"
+                              class="icon-s"
+                              alt="time icon"
+                            />
+                            <p>Time:</p>
+                          </span>
+                          <p class="labels">12:30-14:00</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/rotate.png"
+                              class="icon-s"
+                              alt="recurrence icon"
+                            />
+                            <p>Recurrence:</p>
+                          </span>
+                          <p class="labels">Yearly</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/profile.png"
+                              class="icon-s"
+                              alt="booker icon"
+                            />
+                            <p>Booker:</p>
+                          </span>
+                          <p class="labels">Anne Pedersen</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="participants icon"
+                            />
+                            <p>Participants:</p>
+                          </span>
+                          <p class="labels">6</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Location</p>
+                      <span class="section-content">
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/room.png"
+                              class="icon-s"
+                              alt="room icon"
+                            />
+                            <p>Room:</p>
+                          </span>
+                          <p class="labels">Classroom 01</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/group.png"
+                              class="icon-s"
+                              alt="capacity icon"
+                            />
+                            <p>Capacity:</p>
+                          </span>
+                          <p class="labels">40 people</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/setting.png"
+                              class="icon-s"
+                              alt="equipment icon"
+                            />
+                            <p>Equipment:</p>
+                          </span>
+                          <p class="labels">
+                            Whiteboard, external screen, sound system
+                          </p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/building.png"
+                              class="icon-s"
+                              alt="building icon"
+                            />
+                            <p>Building:</p>
+                          </span>
+                          <p class="labels">Main Campus</p>
+                        </span>
+                        <span class="section-details">
+                          <span class="labels-medium section-details-title">
+                            <img
+                              src="images/icons/floor.png"
+                              class="icon-s"
+                              alt="floor icon"
+                            />
+                            <p>Floor:</p>
+                          </span>
+                          <p class="labels">2nd floor</p>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="open-sections">
+                      <p class="details-bold">Details</p>
+                      <p class="labels">
+                        An annual meeting, where we discuss and evaluate on the
+                        past work experiences. Mandatory attendance.
+                      </p>
+                    </span>
+                  </span>
+                  <span class="card-open-map">
+                    <p class="details-bold">Map</p>
+                    <img
+                      src="images/map/map-01.png"
+                      alt="a map view of the room"
+                      class="map"
+                    />
+                  </span>
+                </span>
+                <span class="card-open-participants">
+                  <p class="details-bold">Participants</p>
+                  <span class="participants-grid">
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/anne.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Anne Pedersen</p>
+                          <p class="labels grey">anpe@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/jesper.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Jesper Nielsen</p>
+                          <p class="labels grey">jeni@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/malene.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Malene Andersen</p>
+                          <p class="labels grey">maan@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/thomas.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Thomas Olsen</p>
+                          <p class="labels grey">thol@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/michael.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Michael Sørensen</p>
+                          <p class="labels grey">misø@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                    <span class="participant">
+                      <span class="participant-details">
+                        <img
+                          src="images/profiles/martin.png"
+                          class="profile-m"
+                          alt="profile image of a participant"
+                        />
+                        <span class="participant-info">
+                          <p class="details-medium">Martin Thomsen</p>
+                          <p class="labels grey">math@studiz.dk</p>
+                        </span>
+                      </span>
+                      <span class="participant-status attending">
+                        <img
+                          src="images/icons/tick-circle.png"
+                          class="icon-s"
+                          alt="attending icon"
+                        />
+                        <p class="labels">Attending</p>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      <span id="footer-links">
+        <span class="footer-links-list">
+          <p class="details-bold">STUDIZ</p>
+          <p class="details">Student discount Aalborg</p>
+          <p class="details">Digital Student-ID</p>
+          <p class="details">Studiz app</p>
+        </span>
+        <span class="footer-links-list">
+          <p class="details-bold">DISCOVER</p>
+          <p class="details">Blog</p>
+          <p class="details">Studiz start guide</p>
+          <p class="details">Tickets by Studiz</p>
+          <p class="details">Unemployment insurance fund</p>
+          <p class="details">Student drive</p>
+        </span>
+        <span class="footer-links-list">
+          <p class="details-bold">SUPPORT</p>
+          <p class="details">FAQ</p>
+          <p class="details">Help center</p>
+        </span>
+        <span class="footer-links-list">
+          <p class="details-bold">COMPANY</p>
+          <p class="details">Do you have an offer for the students?</p>
+          <p class="details">About us</p>
+          <p class="details">Team</p>
+          <p class="details">Join us</p>
+        </span>
+        <span class="footer-links-list">
+          <p class="details-bold">INSTITUTION</p>
+          <p class="details">Studiz for educational institutions</p>
+          <p class="details">Studiz for student unions</p>
+          <p class="details">Thesis, internship and termproject</p>
+          <p class="details">Join us</p>
+        </span>
+      </span>
+      <span id="app-header">
+        <hr />
+        <p class="heading-3" style="color: var(--text-white); width: 10rem">
+          Studiz app
+        </p>
+        <hr />
+      </span>
+      <span id="app-buttons">
+        <img
+          src="images/app-store.png"
+          class="app-button"
+          alt="a button to download the map through App Store"
+        />
+        <img
+          src="images/google-play.png"
+          class="app-button"
+          alt="a button to download the map through Google Play"
+        />
+      </span>
+      <span id="contact-container">
+        <span id="contact-info">
+          <span id="info-details" class="labels" style="color: var(--grey)">
+            <p>@2023 Studiz Ldt.</p>
+            <p>Customer Care: (+45) 71 99 75 20</p>
+            <p>E-mail: info@studiz.dk</p>
+            <p>Terms and conditions</p>
+          </span>
+          <span id="some-icons">
+            <img
+              src="images/some/facebook.png"
+              class="some-icon"
+              alt="Link to Facebook"
+            />
+            <img
+              src="images/some/instagram.png"
+              class="some-icon"
+              alt="Link to Instagram"
+            />
+            <img
+              src="images/some/tiktok.png"
+              class="some-icon"
+              alt="Link to Tiktok"
+            />
+          </span>
+        </span>
+      </span>
+    </div>
     <script src="js.js"></script>
-</body>
+  </body>
 </html>
-
-
