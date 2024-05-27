@@ -9,4 +9,4 @@ Due to the admin system being primarily a backend, I decided to code a Profile p
 
 The cards work like an accordion, so - thanks to Java Script - they open with more detailed information inside.
 
-### To view how the code works on the actual website, go to [roombookings.zuzannaranuszkiewicz.dk](roombookings.zuzannaranuszkiewicz.dk)
+### To view how the code works on the actual website, go to [https://roombookings.zuzannaranuszkiewicz.dk](https://roombookings.zuzannaranuszkiewicz.dk)
