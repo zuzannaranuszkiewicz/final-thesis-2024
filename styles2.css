@@ -175,6 +175,11 @@ button:hover {
   gap: 2rem;
 }
 
+/* responsive menu - button */
+#menu-hamburger {
+  display: none;
+}
+
 #nav-discounts {
   display: flex;
   align-items: center;
@@ -657,3 +662,105 @@ button:hover {
 #back:hover {
   background-color: #37b8b0;
 }
+
+media screen and (max-width: 400px) {
+  
+  /* responsive nav */
+  #navbar
+  {
+    padding: 3rem 1rem 1.5rem 1rem;
+    width: calc(100vw - 1rem);
+  }
+
+  #menu-hamburger {
+    display: block;
+  }
+
+  #nav-items {
+    display: none;
+  }
+
+    /* responsive footer */
+  #footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 4rem;
+  }
+
+  .footer-links-list {
+    text-align: center;
+    align-items: center;
+    width: auto;
+  }
+
+  #app-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #info-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* responsive content */
+  #content {
+    width: calc(100vw - 2rem);
+  }
+
+  /* responsive user info */
+  #user-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #user-info-name {
+    width: 100%;
+  }
+
+  /* responsive tabs - hidden just for the visual purposes */
+  .tab {
+    display: none;
+  }
+
+  /* responsive cards */
+  #bookings {
+    gap: 0.75rem;
+  }
+
+  .card-tags {
+    width: 110%;
+  }
+
+  .icon-button {
+    padding: 0;
+  }
+
+  /* responsive card content */
+  .card-open-info {
+    gap: 1rem;
+  }
+  .card-open-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  .participant {
+    gap: 0;
+  }
+}
+
