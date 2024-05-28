@@ -762,5 +762,30 @@ media screen and (max-width: 400px) {
   .participant {
     gap: 0;
   }
+  
+  /* error page */
+  #error-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #error-image {
+    width: 20rem;
+    height: auto;
+  }
+
+  #error-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #error-text {
+    align-items: center;
+    width: calc(100vw - 2rem);
+  }
+
+  .heading-2 {
+    font-size: 2rem;
+  }
 }
 
