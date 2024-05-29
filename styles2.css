@@ -664,6 +664,24 @@ button:hover {
 }
 
 media screen and (max-width: 400px) {
+
+    /* responsive card content */
+  .card-open-info {
+    gap: 1rem;
+  }
+  .card-open-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  .participant {
+    gap: 0;
+  }
   
   /* responsive nav */
   #navbar
@@ -743,24 +761,6 @@ media screen and (max-width: 400px) {
 
   .icon-button {
     padding: 0;
-  }
-
-  /* responsive card content */
-  .card-open-info {
-    gap: 1rem;
-  }
-  .card-open-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .map {
-    width: 100%;
-    height: auto;
-  }
-
-  .participant {
-    gap: 0;
   }
   
   /* error page */
